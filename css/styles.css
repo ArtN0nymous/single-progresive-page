@@ -1,7 +1,6 @@
 html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
 }
 #stars {
   width: 1px;
@@ -21,21 +20,13 @@ html {
 }
 
 #title {
-  position: relative;
-  left: 0;
-  right: 0;
+  position: absolute;
   color: #FFF;
   text-align: center;
-  font-family: "lato", sans-serif;
+  font-family: "arial", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   letter-spacing: 10px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes animStar {
@@ -45,4 +36,23 @@ html {
   to {
     transform: translateY(-2000px);
   }
+}
+.target{
+  background-color: #090a0f;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.img{
+  border-radius: 100%;
+  border: 5rem solid blue;
+}
+.img:hover{
+  border-radius: 100%;
+  border: 7rem solid red;
+}
+.table{
+  border: 0.2rem solid black;
+}
+.head{
+  background-color: rgb(20, 10, 30);
 }
