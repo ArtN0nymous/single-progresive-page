@@ -47,12 +47,48 @@ html {
   border: 5rem solid blue;
 }
 .img:hover{
-  border-radius: 100%;
-  border: 7rem solid red;
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+  border-color: rgb(255, 187, 0);
+  z-index: 1;
+  cursor: pointer;
 }
 .table{
   border: 0.2rem solid black;
 }
 .head{
   background-color: rgb(20, 10, 30);
+}
+.img_1:hover{
+  -webkit-transform:scale(1.2);
+  transform:scale(1.5);
+  border-color: rgb(255, 187, 0);
+  z-index: 1;
+  cursor: pointer;
+}
+.text:hover{
+  color:goldenrod;
+  cursor: pointer;
+}
+.table{
+  width: 99.5%;
+  overflow: scroll;
+}
+.table::-webkit-scrollbar {
+  display: none;
+}
+td{
+  border: 1px solid #FFF;
+  background-color: rgba(12,176,243,0.1);
+}
+.item:hover{
+  -webkit-transform:scale(1.2);
+  transform:scale(1.1);
+  border-color: rgb(255, 187, 0);
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.text_1{
+  max-width: 100%;
 }

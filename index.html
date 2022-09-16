@@ -9,36 +9,104 @@
 </head>
 <body>
     <div id="stars"></div>
-    <div style="display:grid" id="title">
+    <div style="width: 99.5%;" id="title">
         <div>
             <img src="/img/foto.jpg" width="250" class="img">
         </div>
         <br>
         <div>
             <div class="target">
-                <h1>Nombre: Jesús Ramón Valdez Torres</h1>
-                <h2>Fecha na: 25/12/2000</h2>
+                <h1>Nombre:</h1><div  class='text'><h1>Jesús Ramón Valdez Torres</h1></div>
+                <h2>Fecha na:</h2><div class="text"> <h2>25/12/2000</h2></div>
                 <h3>Edad: 21</h3>
             </div>
-            <h4>Serie fav: Merlin</h4>
-            <h5>Habilidades: Regeneración</h5>
-            <label>Describete a ti mismo: I´m Groot, I´m groot</label>
+            <div class="target">
+                <h4>Serie fav:</h4><div class="text"><h4>Merlin</h4></div>
+                <img src="/img/MERLIN.webp" width="250" class="img_1">
+            </div>
+            <h5>Habilidades:</h5>
+            <ul class="text_1">
+                <li  class="item">Desarrollo de aplicaciones moviles</li>
+                <li class="item">Aplicaciones web</li>
+                <li class="item">Software de escritorio</li>
+                <li class="item">Configuración de servidores</li>
+            </ul>
+            <label>Describete a ti mismo: Desarrollador independiente.</label>
         </div>
         <br>
-        <table class="table">
-            <thead class="head">
-                <tr>
-                    <th>Columna1</th>
-                    <th>Columna2</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CAT1</td>
-                    <td>CAT1</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table">
+            <table style="text-align: center;margin: 0 auto;">
+                <thead class="head">
+                    <tr>
+                        <th>Lenguajes de programación</th>
+                        <th>Frameworks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/r.png" width="150" class="img_1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/ruby.png" width="100" class="img_1"></td>
+                        <td><img src="img/Ruby_On_Railspng.png" width="150" class="img_1"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/css.png" width="100" class="img_1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/VB.NET.png" width="100" class="img_1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Python.png" width="150" class="img_1"></td>
+                        <td><img src="img/flask.png" width="100" class="img_1"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/java.png" width="150" class="img_1"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/PHP.png" width="100"class="img_1" ></td>
+                        <td><img src="img/laravel.png" width="150"class="img_1" ></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/javascript.webp" width="100" class="img_1"></td>
+                        <td><img src="img/react-native.png" width="100" class="img_1"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/Dart.png" width="150" class="img_1"></td>
+                        <td><img src="img/flutter.png" width="150"class="img_1" ></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/sql-logo.png" width="150"class="img_1" ></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/html.png" width="100" class="img_1"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+    <script>
+        var items = document.getElementsByClassName('item');
+        for (var i = 0; i < items.length; i++) {
+            items[i].onmouseover = function(e) {
+                var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+                var colorString = '0px 0px 30px 0px ' + color;
+                this.style['box-shadow'] = colorString;
+                this.style['-webkit-box-shadow'] = colorString;
+                this.style['-moz-box-shadow'] = colorString;
+            }
+            items[i].onmouseout = function(e) {
+                this.style['box-shadow'] = "none";
+                this.style['-webkit-box-shadow'] = "none";
+                this.style['-moz-box-shadow'] = "none";
+            }
+        }
+    </script>
 </body>
 </html>
