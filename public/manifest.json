@@ -1,0 +1,17 @@
+{
+    "name":"Mi app progresiva",
+    "short_name":"App progresiva",
+    "theme_color":"#090a0f",
+    "background_color":"#090a0f",
+    "display":"standalone",
+    "orientation":"portrait",
+    "scope":"./",
+    "start_url":"./",
+    "icons":[
+        {
+            "src":"./img/icon.png",
+            "type":"image/png",
+            "sizes":"443x443"
+        }
+    ]
+}
